@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+    --FontBlack: #252525;
+    --FontButton: #2254D4;
+    --FontDetals: #888888;
+    --Background1: #F3F6FB;
+    --Background2: #fff;
+    --Family1: "Exo 2", sans-serif;
+    --Family2: "Source Sans 3", sans-serif;
+    --Bold: 700;
+    --SemiBold: 600;
+    --Regular: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: white;
+    margin: 20px auto;
+}
+header .container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+header h1{
+    font-family: var(--Family2);
+    color: var(--FontButton);
+    font-weight: var(--Bold);
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--FontBlack);
+    font-family: var(--Family2);
+    font-weight: var(--Bold);
+}
+.IconButton{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IconButton button{
+    background-color: var(--FontButton);
+    color: white;
+    font-size: 15px;
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 110px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.IconButton ion-icon{
+    font-size: 30px;
+    color: var(--FontButton);
+    margin: 0 auto;
+    cursor: pointer;
+}
