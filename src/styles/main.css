@@ -70,3 +70,44 @@ nav a{
     margin: 0 auto;
     cursor: pointer;
 }
+
+#home{
+    background-image: url(/images/Banner-Background-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -60px;
+    height: 568px;
+    justify-content: center;
+    align-items: center;
+}
+#home .container{
+    width: 1200px;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+#home h1{
+    font-family: var(--Family1);
+    width: 390px;
+    text-align: left;
+    color: var(--FontBlack);
+    font-weight: var(--Bold);
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#home .container-esq{
+    margin: 0 auto;
+}
+#home button{
+    background-color: var(--FontButton);
+    color: white;
+    font-size: 15px;
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 150px;
+    margin: 0 auto;
+    height: 45px;
+    border-radius: 30px;
+}
