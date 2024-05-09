@@ -216,6 +216,10 @@ nav a{
         width: 90%;
         max-width: 900px;
     }
+    #banner .container {
+        width: 90%;
+        max-width: 900px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -231,7 +235,7 @@ nav a{
         font-size: 40px;
         width: auto;
         text-align: center;
-        width: 230px; /* Centralize o texto */
+        width: 350px; /* Centralize o texto */
     }
 
     #home .container-esq {
@@ -240,7 +244,7 @@ nav a{
     }
 
     #home button {
-        width: 40%; /* Ajuste a largura do botão conforme necessário */
+        width: 50%; /* Ajuste a largura do botão conforme necessário */
     }
     #icones .container {
         flex-direction: row;
@@ -249,7 +253,46 @@ nav a{
     #icones .container{
         gap: 20px;
     }
-    
+    #banner {
+        height: auto;
+        padding: 50px 0;
+        margin: 0 auto;
+        flex-direction: column; /* Adicione algum espaço entre o conteúdo e a borda */
+    }
+
+    #banner .container {
+        flex-direction: column;
+        margin: 50px auto;
+        align-items: center; /* Centralize o conteúdo horizontalmente */
+    }
+
+    #banner h1 {
+        font-size: 40px;
+        width: auto; /* Permita que o texto se ajuste conforme necessário */
+        text-align: center; /* Centralize o texto */
+    }
+
+    #banner p {
+        width: 100%; /* Faça o parágrafo ocupar 80% da largura disponível */
+        text-align: center; /* Centralize o texto */
+    }
+
+    #banner button {
+        max-width: 200px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    #banner .container-esq{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #banner .container-dir img {
+        margin-top: 50; 
+        width: 250px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -268,6 +311,17 @@ nav a{
     }
     #icones .icon-icones p{
         display: none;
+    }
+    #banner h1 {
+        font-size: 30px;
+    }
+
+    #banner p {
+        font-size: 16px;
+    }
+
+    #banner button {
+        width: 100%; /* Faça o botão ocupar toda a largura disponível */
     }
 }
 
