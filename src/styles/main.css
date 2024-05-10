@@ -33,28 +33,28 @@ header {
 }
 
 header .container {
-    width: 90%; /* Alterado para largura responsiva */
-    max-width: 1000px; /* Adicionado máximo de largura */
+    width: 90%;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    gap: 20px; /* Alterado para espaçamento mais responsivo */
+    gap: 20px;
 }
 
 header h1 {
     font-family: var(--Family2);
     color: var(--FontButton);
     font-weight: var(--Bold);
-    font-size: 24px; /* Ajuste do tamanho da fonte */
-    margin: 0; /* Removido margem para melhorar a estética */
+    font-size: 24px;
+    margin: 0;
 }
 
 nav ul {
     display: flex;
-    gap: 10px; /* Alterado para espaçamento mais responsivo */
+    gap: 10px;
     list-style: none;
-    padding: 0; /* Removido o preenchimento para melhorar a estética */
+    padding: 0;
 }
 
 nav a {
@@ -62,11 +62,11 @@ nav a {
     color: var(--FontBlack);
     font-family: var(--Family2);
     font-weight: var(--Bold);
-    font-size: 16px; /* Ajuste do tamanho da fonte */
+    font-size: 16px;
 }
 
 .IconButton {
-    gap: 10px; /* Alterado para espaçamento mais responsivo */
+    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,18 +75,18 @@ nav a {
 .IconButton button {
     background-color: var(--FontButton);
     color: white;
-    font-size: 14px; /* Ajuste do tamanho da fonte */
+    font-size: 14px;
     font-family: var(--Family1);
     font-weight: var(--SemiBold);
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0);
-    width: 90px; /* Ajuste da largura do botão */
-    height: 35px; /* Ajuste da altura do botão */
+    width: 90px;
+    height: 35px;
     border-radius: 30px;
 }
 
 .IconButton ion-icon {
-    font-size: 24px; /* Ajuste do tamanho do ícone */
+    font-size: 24px;
     color: var(--FontButton);
     cursor: pointer;
 }
@@ -102,7 +102,6 @@ nav a {
 
 .menu-toggle {
     display: none;
-     /* Esconde o ícone do menu por padrão em telas maiores */
 }
 
 
@@ -133,7 +132,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Adicionado */
+    position: relative;
 }
 
 #home .container-esq {
@@ -144,17 +143,17 @@ nav a {
 #home .container-dir {
     max-width: 750px;
     text-align: right;
-    position: relative; /* Adicionado */
+    position: relative;
 }
 
 #home .diagonal {
-    width: 450px; /* Largura do paralelogramo */
-    height: 570px; /* Altura do paralelogramo */
-    background-color: var(--FontButton); /* Cor do paralelogramo */
+    width: 450px;
+    height: 570px;
+    background-color: var(--FontButton);
     position: absolute;
-    top: 50%; /* Posicionamento verticalmente centrado */
-    right: -50px; /* Distância do lado direito */
-    transform: translateY(-50%) skewx(-10deg); /* Inclinação do paralelogramo */
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%) skewx(-10deg);
     z-index: -1;
 }
 
@@ -270,10 +269,10 @@ nav a {
 
 #produtos .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Utiliza o grid com colunas flexíveis */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     align-items: center;
     max-width: 1000px;
-    width: 90%; /* Reduz a largura do container para permitir algum espaço nas laterais */
+    width: 90%;
     gap: 20px;
 }
 
@@ -283,11 +282,11 @@ nav a {
     font-weight: var(--Bold);
     font-size: 45px;
     margin-bottom: 25px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 #produtos .card-produto {
-    position: relative; /* Adiciona posição relativa para o posicionamento do ícone */
+    position: relative;
     width: 100%;
     height: 230px;
     border-radius: 20px;
@@ -358,41 +357,41 @@ nav a {
         max-width: 900px;
     }
     header .container {
-        width: 90%; /* Ajuste da largura responsiva */
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #home {
         height: auto;
-        padding: 0px 0; /* Adicione algum espaço entre o conteúdo e a borda */
-        flex-direction: column; /* Alinha os itens verticalmente */
+        padding: 0;
+        flex-direction: column;
         justify-content: center;
-        text-align: center; /* Centraliza verticalmente */
+        text-align: center;
     }
 
     #home .container {
-        width: 90%; /* Ajusta a largura do container */
+        width: 90%;
         flex-direction: column;
         text-align: center;
         margin-top: 200px;
     }
 
     #home .container-esq {
-        width: auto; /* Permita que o texto se ajuste conforme necessário */
-        text-align: center; /* Centralize o texto */
+        width: auto;
+        text-align: center;
     }
 
     #home .container-dir {
-        text-align: center; /* Centralize o texto */
+        text-align: center;
     }
 
     #home .diagonal {
-        display: none; /* Esconda o paralelogramo em telas menores */
+        display: none;
     }
 
     #home button {
-        width: 200px; /* Ajuste a largura do botão conforme necessário */
+        width: 200px;
     }
     #icones .container {
         flex-direction: row;
@@ -406,25 +405,25 @@ nav a {
         padding: 50px 0;
         margin: 0 auto;
         flex-direction: column;
-        height: 650px; /* Adicione algum espaço entre o conteúdo e a borda */
+        height: 650px;
     }
 
     #banner .container {
         flex-direction: column;
         margin: 0 auto;
         margin-top: 120px;
-        align-items: center; /* Centralize o conteúdo horizontalmente */
+        align-items: center;
     }
 
     #banner h1 {
         font-size: 40px;
-        width: auto; /* Permita que o texto se ajuste conforme necessário */
-        text-align: center; /* Centralize o texto */
+        width: auto;
+        text-align: center;
     }
 
     #banner p {
-        width: 100%; /* Faça o parágrafo ocupar 80% da largura disponível */
-        text-align: center; /* Centralize o texto */
+        width: 100%;
+        text-align: center;
     }
 
     #banner button {
@@ -440,43 +439,43 @@ nav a {
         justify-content: center;
     }
     #banner .container-dir img {
-        margin-top: 50; 
+        margin-top: 50;
         width: 250px;
     }
     #produtos .container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduz a largura mínima das colunas */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     #produtos h1 {
         font-size: 35px;
     }
     header h1 {
-        font-size: 20px; /* Ajuste do tamanho da fonte */
+        font-size: 20px;
     }
 
     nav a {
-        font-size: 14px; /* Ajuste do tamanho da fonte */
+        font-size: 14px;
     }
 
     .IconButton button {
-        font-size: 12px; /* Ajuste do tamanho da fonte */
-        width: 80px; /* Ajuste da largura do botão */
-        height: 30px; /* Ajuste da altura do botão */
+        font-size: 12px;
+        width: 80px;
+        height: 30px;
     }
 
     .IconButton ion-icon {
-        font-size: 20px; /* Ajuste do tamanho do ícone */
+        font-size: 20px;
     }
     .menu {
-        display: none; /* Esconde o menu por padrão em telas menores */
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        padding-top: 20px; /* Adiciona algum espaço acima do menu hamburguer */
+        padding-top: 20px;
     }
 
     .menu-toggle {
-        display: block; /* Exibe o ícone do menu em telas menores */
+        display: block;
         cursor: pointer;
     }
 
@@ -489,10 +488,10 @@ nav a {
         flex-direction: column;
         position: absolute;
         top: 80px;
-        background-color: #fff; /* Adicione a cor de fundo do menu aqui */
+        background-color: #fff;
         width: 100%;
         left: 0;
-        z-index: 1000; /* Garante que o menu hamburguer esteja acima de outros elementos */
+        z-index: 1000;
     }
 
     .menu.active li {
@@ -500,13 +499,13 @@ nav a {
     }
 
     .IconButton {
-        display: none; /* Esconde os ícones do carrinho e do botão de login em telas menores */
+        display: none;
     }
 }
 
 @media only screen and (max-width: 576px) {
     #home button {
-        width: 100%; /* Faça o botão ocupar toda a largura disponível */
+        width: 100%;
     }
     #home h1 {
         width: 100%;
@@ -515,7 +514,7 @@ nav a {
     }
 
     #home button {
-        width: 40%; /* Faça o botão ocupar toda a largura disponível */
+        width: 40%;
     }
     #icones .icon-icones ion-icon {
         font-size: 35px;
@@ -535,7 +534,7 @@ nav a {
     }
 
     #banner button {
-        width: 100%; /* Faça o botão ocupar toda a largura disponível */
+        width: 100%;
     }
     #produtos h1 {
         font-size: 30px;
