@@ -33,6 +33,7 @@ header .container{
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    gap: 55px;
 }
 header h1{
     font-family: var(--Family2);
@@ -163,7 +164,7 @@ nav a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -204,9 +205,92 @@ nav a{
 
 #banner .container-dir img {
     max-width: 100%;
-    margin-top: -80px; /* Ajuste a margem conforme necessário */
+    margin-top: -80px;
+}
+#produtos {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
+#produtos .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Utiliza o grid com colunas flexíveis */
+    align-items: center;
+    max-width: 1000px;
+    width: 90%; /* Reduz a largura do container para permitir algum espaço nas laterais */
+    gap: 20px;
+}
+
+#produtos h1 {
+    font-family: var(--Family1);
+    color: var(--FontBlack);
+    font-weight: var(--Bold);
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center; /* Centraliza o texto */
+}
+
+#produtos .card-produto {
+    position: relative; /* Adiciona posição relativa para o posicionamento do ícone */
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+    background-color: var(--Background1);
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#produtos .card-produto:hover {
+    background-color: rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+}
+
+
+
+#produtos .card-produto img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+#produtos .card-produto:hover img {
+    transform: scale(1.05);
+}
+#produtos .notas {
+    color: rgb(241, 157, 0);
+    font-size: 20px;
+}
+
+#produtos h3 {
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+    margin-bottom: 5px;
+}
+
+#produtos .prices {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.price {
+    font-family: var(--Family1);
+    font-weight: var(--Bold);
+}
+
+.price-del {
+    font-family: var(--Family1);
+    font-weight: var(--Bold);
+    color: var(--FontDetals);
+}
 @media only screen and (max-width: 1200px) {
     #home .container {
         width: 90%;
@@ -293,6 +377,13 @@ nav a{
         margin-top: 50; 
         width: 250px;
     }
+    #produtos .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduz a largura mínima das colunas */
+    }
+
+    #produtos h1 {
+        font-size: 35px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -322,6 +413,9 @@ nav a{
 
     #banner button {
         width: 100%; /* Faça o botão ocupar toda a largura disponível */
+    }
+    #produtos h1 {
+        font-size: 30px;
     }
 }
 
