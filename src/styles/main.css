@@ -253,8 +253,6 @@ nav a{
     cursor: pointer;
 }
 
-
-
 #produtos .card-produto img {
     max-width: 80%;
     height: auto;
@@ -278,8 +276,11 @@ nav a{
 #produtos .prices {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
 }
+
 
 .price {
     font-family: var(--Family1);
@@ -341,12 +342,14 @@ nav a{
         height: auto;
         padding: 50px 0;
         margin: 0 auto;
-        flex-direction: column; /* Adicione algum espaço entre o conteúdo e a borda */
+        flex-direction: column;
+        height: 650px; /* Adicione algum espaço entre o conteúdo e a borda */
     }
 
     #banner .container {
         flex-direction: column;
-        margin: 50px auto;
+        margin: 0 auto;
+        margin-top: 120px;
         align-items: center; /* Centralize o conteúdo horizontalmente */
     }
 
