@@ -422,6 +422,9 @@ nav a {
     #produtos-2 .carousel {
         width: 800px;
       }
+      #produtos .card-produto{
+        width: 90%;
+      }
 }
 
 @media only screen and (max-width: 768px) {
@@ -655,7 +658,7 @@ nav a {
         width: 355px;
       }
       #produtos .card-produto{
-        width: 200px;
+        width: 150px;
         height: 150px;
         margin: 0 auto;
     }
