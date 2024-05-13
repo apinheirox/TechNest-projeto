@@ -201,7 +201,7 @@ nav a {
 }
 
 
-#banner {
+#banner{
     background-color: #F3F6FB;
     padding: 10px 0;
     height: 400px;
@@ -210,8 +210,17 @@ nav a {
     align-items: center;
     margin-top: 120px;
 }
-
-#banner .container {
+#banner-2{
+    background-color: #F3F6FB;
+    padding: 10px 0;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+#banner .container,
+#banner-2 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -219,7 +228,8 @@ nav a {
     width: 100%;
 }
 
-#banner h1 {
+#banner h1,
+#banner-2 h1 {
     font-family: var(--Family1);
     width: 390px;
     text-align: left;
@@ -229,7 +239,8 @@ nav a {
     margin-bottom: 15px;
 }
 
-#banner p {
+#banner p,
+#banner-2 p {
     font-size: 18px;
     color: var(--FontButton);
     font-family: var(--Family2);
@@ -238,7 +249,8 @@ nav a {
     width: 300px;
 }
 
-#banner button {
+#banner button,
+#banner-2 button {
     background-color: var(--FontButton);
     color: white;
     font-size: 17px;
@@ -257,6 +269,10 @@ nav a {
 #banner .container-dir img {
     max-width: 100%;
     margin-top: -80px;
+}
+#banner .img-dir {
+    max-width: 100%;
+    margin-top: 100px;
 }
 #produtos {
     padding: 10px 0;
@@ -352,7 +368,8 @@ nav a {
         width: 90%;
         max-width: 900px;
     }
-    #banner .container {
+    #banner .container,
+    #banner-2 .container {
         width: 90%;
         max-width: 900px;
     }
@@ -400,7 +417,7 @@ nav a {
     #icones .container{
         gap: 20px;
     }
-    #banner {
+    #banner, #banner-2 {
         height: auto;
         padding: 50px 0;
         margin: 0 auto;
@@ -408,37 +425,37 @@ nav a {
         height: 650px;
     }
 
-    #banner .container {
+    #banner .container, #banner-2 .container {
         flex-direction: column;
         margin: 0 auto;
         margin-top: 120px;
         align-items: center;
     }
 
-    #banner h1 {
+    #banner h1, #banner-2 h1 {
         font-size: 40px;
         width: auto;
         text-align: center;
     }
 
-    #banner p {
+    #banner p, #banner-2 p {
         width: 100%;
         text-align: center;
     }
 
-    #banner button {
+    #banner button, #banner-2 button {
         max-width: 200px;
         width: 100%;
         margin-top: 15px;
     }
-    #banner .container-esq{
+    #banner .container-esq, #banner-2 .container-esq{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    #banner .container-dir img {
+    #banner .container-dir img, #banner-2 .container-dir img {
         margin-top: 50;
         width: 250px;
     }
@@ -525,15 +542,15 @@ nav a {
     #icones .icon-icones p{
         display: none;
     }
-    #banner h1 {
+    #banner h1, #banner-2 h1 {
         font-size: 30px;
     }
 
-    #banner p {
+    #banner p, #banner-2 p {
         font-size: 16px;
     }
 
-    #banner button {
+    #banner button, #banner-2 button {
         width: 100%;
     }
     #produtos h1 {
