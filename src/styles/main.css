@@ -508,10 +508,44 @@ nav a {
         margin-top: 50;
         width: 250px;
     }
-    #produtos .container, #produtos-2 .container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    #produtos-2 .container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     }
-
+    #produtos .container{
+        flex-direction: column;
+        grid-template-columns:  1fr;
+        width: 400px;
+        margin: 0 auto;
+    }
+    #produtos .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 20px;
+    }
+    .infos{
+        flex-direction: column;
+        text-align: left;
+    }
+    #produtos .card-produto{
+        max-width: 60%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    #produtos .card-produto img{
+        width: 70%;
+    }
+    #produtos .infos h3{
+        font-size: 17px;
+    }
+    #produtos .infos p{
+        font-size: 13px;
+    }
+    #produtos .notas{
+        font-size: 15px;
+    }
     #produtos h1, #produtos-2 h1 {
         font-size: 35px;
     }
