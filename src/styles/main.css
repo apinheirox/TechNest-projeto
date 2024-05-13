@@ -654,5 +654,10 @@ nav a {
     #produtos-2 .carousel {
         width: 355px;
       }
+      #produtos .card-produto{
+        width: 200px;
+        height: 150px;
+        margin: 0 auto;
+    }
 }
 
