@@ -608,5 +608,12 @@ nav a {
     #produtos h1 {
         font-size: 30px;
     }
+    .carousel {
+        width: 200px;
+        margin: 0 auto;
+      }
+      .carousel img{
+        width: 40%;
+      }
 }
 
