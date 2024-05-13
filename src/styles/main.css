@@ -396,9 +396,74 @@ nav a {
     margin: 0 5px;
   }
 
+#banner-3{
+    padding: 10px 0;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+#banner-3 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    gap: 20px;
+}
 
-
-
+#banner-3 .card-2{
+    background-color: var(--Background1);
+    background-image: url(/images/Banner-Background-4.png);
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+#banner-3 .card-3{
+    background-color: var(--Background1);
+    background-image: url(/images/Banner-Background-5.png);
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+#banner-3 .card-3 h3, #banner-3 .card-2 h3{
+    font-family: var(--Family1);
+    font-weight: var(--Bold);
+    font-size: 35px;
+    margin: 0 auto;
+    color: white;
+}
+#banner-3 .card-3 button, #banner-3 .card-2 button{
+    background-color: var(--FontButton);
+    color: white;
+    font-size: 14px;
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 120px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 30px;
+    
+}
 @media only screen and (max-width: 1200px) {
     body{
         overflow-x: hidden;
@@ -423,6 +488,12 @@ nav a {
         width: 800px;
       }
       #produtos .card-produto{
+        width: 90%;
+      }
+      #banner-3 .container{
+        gap: 15px;
+      }
+      #banner-3 .card-2, #banner-3 .card-3{
         width: 90%;
       }
 }
@@ -612,6 +683,20 @@ nav a {
       }
       .slick-dots {
         bottom: -30px;
+      }
+      #banner-3 .card-3 button, #banner-3 .card-2 button{
+        margin: 10px auto;
+      }
+      #banner-3{
+        margin-top: 200px;
+      }
+      #banner-3 .container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      #banner-3 .card-3 h3, #banner-3 .card-2 h3{
+        font-size: 30px;
+        text-align: center;
       }
 }
 
