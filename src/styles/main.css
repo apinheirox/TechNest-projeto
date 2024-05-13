@@ -416,6 +416,9 @@ nav a {
     header .container {
         width: 90%;
     }
+    #produtos-2 .carousel {
+        width: 800px;
+      }
 }
 
 @media only screen and (max-width: 768px) {
@@ -561,7 +564,9 @@ nav a {
     .carousel {
         width: 500px;
       }
-
+      .carousel img{
+        width: 50%;
+      }
       .slick-dots {
         bottom: -30px;
       }
