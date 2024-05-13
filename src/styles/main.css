@@ -508,11 +508,11 @@ nav a {
         margin-top: 50;
         width: 250px;
     }
-    #produtos .container {
+    #produtos .container, #produtos-2 .container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    #produtos h1, #produtos-2 {
+    #produtos h1, #produtos-2 h1 {
         font-size: 35px;
     }
     header h1 {
@@ -614,7 +614,7 @@ nav a {
     #banner button, #banner-2 button {
         width: 100%;
     }
-    #produtos h1, #produtos-2 {
+    #produtos h1, #produtos-2 h1 {
         font-size: 30px;
     }
     #produtos-2 .carousel {
