@@ -381,5 +381,12 @@ footer {
     .footer-column:nth-child(2){
         text-align: center;
     }
+    .container{
+        max-width: 400px;
+    }
+    .main-image{
+        width: 70%;
+        margin-top: 30px;
+    }
 }
 
