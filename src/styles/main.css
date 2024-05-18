@@ -412,7 +412,7 @@ nav a {
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
-    gap: 20px;
+    gap: 15px;
 }
 
 #banner-3 .card-2{
@@ -491,10 +491,10 @@ nav a {
         width: 90%;
       }
       #banner-3 .container{
-        gap: 15px;
+        gap: 10px;
       }
       #banner-3 .card-2, #banner-3 .card-3{
-        width: 90%;
+        width: 100%;
       }
 }
 
