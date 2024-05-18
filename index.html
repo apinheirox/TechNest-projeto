@@ -85,9 +85,9 @@
                 <h1>Os mais vendidos</h1>
             </div>
             <div class="container">
-                <div class="card">
+                <div class="card" onclick="goToProduct(1)" >
                     <div class="card-produto">
-                        <img src="./images/produto1.png" alt="">
+                        <img src="./images/produto1.png" alt="Product 1">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -104,9 +104,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(2)">
                     <div class="card-produto">
-                        <img src="./images/produto2.png" alt="">
+                        <img src="./images/produto2.png" alt="Product 2">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -123,9 +123,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(3)">
                     <div class="card-produto">
-                        <img src="./images/produto3.png" alt="">
+                        <img src="./images/produto3.png" alt="Product 3">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -142,9 +142,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(4)">
                     <div class="card-produto">
-                        <img src="./images/produto4.png" alt="">
+                        <img src="./images/produto4.png" alt="Product 4">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -161,9 +161,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(5)">
                     <div class="card-produto">
-                        <img src="./images/produto5.png" alt="">
+                        <img src="./images/produto5.png" alt="Product 5">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -180,9 +180,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(6)">
                     <div class="card-produto">
-                        <img src="./images/produto6.png" alt="">
+                        <img src="./images/produto6.png" alt="Product 6">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -199,9 +199,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(7)">
                     <div class="card-produto">
-                        <img src="./images/produto7.png" alt="">
+                        <img src="./images/produto7.png" alt="Product 7">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -218,9 +218,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="goToProduct(8)">
                     <div class="card-produto">
-                        <img src="./images/produto8.png" alt="">
+                        <img src="./images/produto8.png" alt="Product 8">
                     </div>
                     <div class="infos">
                         <div class="notas">
@@ -456,6 +456,11 @@
             </div>
         </footer>
     </main>
+    <script>
+        function goToProduct(productId) {
+        window.location.href = `product.html?id=${productId}`;
+}
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./main.js"></script>

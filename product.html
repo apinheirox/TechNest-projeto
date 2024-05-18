@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNest</title>
+    <link rel="stylesheet" href="./src/styles/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TechNest.</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Products</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </nav>
+            <div class="IconButton">
+                <ion-icon name="cart"></ion-icon>
+                <button>Login</button>
+            </div>
+            <div class="menu-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="product-images">
+            <img class="main-image" id="product-image" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1 id="product-title"></h1>
+            <p id="product-price"></p>
+            <p id="product-description"></p>
+            <button onclick="addToCart()">Adicionar ao Carrinho</button>
+        </div>
+        <div class="other-products">
+            <h1>Outros Produtos</h1>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="./images/produto14.png" alt="Product 2">
+                    <p class="price">R$ 549,99</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/produto16.png" alt="Product 2">
+                    <p class="price">R$ 549,99</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/produto10.png" alt="Product 2">
+                    <p class="price">R$ 549,99</p>
+                </div>
+                <div class="product-card">
+                    <img src="./images/produto11.png" alt="Product 3">
+                    <p class="price">R$ 1699,99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <span><h3>TechNest.</h3></span>
+                <p>Potencialize sua tecnologia conosco.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rapidos</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <ul>
+                    <li>Email: contatotechnest.com</li>
+                    <li>Phone: (71) 9 8456-7890</li>
+                    <li>Address: 123 Main Street, Anytown, BRA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechNest. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('id');
+
+  const products = {
+      1: {
+          title: 'Apple Watch Series 7',
+          description: 'Seja para acompanhar os seus exercícios, receber notificações instantâneas, controlar a reprodução de música ou fazer pagamentos sem contato com o Apple Pay, o Apple Watch Series 7 é o companheiro ideal para a sua vida ativa e conectada.',
+          price: 'R$ 599,99',
+          image: './images/produto1.png'
+      },
+      2: {
+          title: 'Headphone JBL White',
+          description: 'Equipado com tecnologia de cancelamento de ruído, você pode se concentrar apenas na sua música, sem distrações externas. Além disso, sua construção robusta garante durabilidade e conforto durante longas sessões de audição. Experimente o melhor em qualidade de áudio com o Fone de Ouvido JBL White.',
+          price: 'R$ 249,99',
+          image: './images/produto2.png'
+      },
+      3: {
+          title: 'Controle Playstation5',
+          description: 'O Controle Playstation5 é o acessório perfeito para proporcionar uma experiência de jogo imersiva e confortável. Com um design ergonômico e tecnologia avançada, este controle oferece precisão e resposta rápida, permitindo que você mergulhe nos seus jogos favoritos com total controle. Além disso, sua conectividade sem fio proporciona liberdade de movimento.',
+          price: 'R$ 439,99',
+          image: './images/produto3.png'
+      },
+      4: {
+          title: 'Fone Preto Bluetooth',
+          description: 'O Fone Preto Bluetooth oferece estilo e funcionalidade em um design elegante. Com conectividade Bluetooth, som premium e conforto duradouro, é o acessório perfeito para música, filmes e chamadas, garantindo liberdade de movimento e uma experiência auditiva imersiva.',
+          price: 'R$ 149,99',
+          image: './images/produto4.png'
+      },
+      5: {
+          title: 'Notebook Lenovo 15',
+          description: 'O Notebook Lenovo 15 combina desempenho poderoso e portabilidade em um design elegante de 15 polegadas. Com tela vibrante, construção leve e longa duração da bateria, é perfeito para trabalho e entretenimento em movimento.',
+          price: 'R$ 2499,99',
+          image: './images/produto5.png'
+      },
+      6: {
+          title: 'Mouse Redragon BL',
+          description: 'O Mouse Redragon Black oferece precisão e conforto em um design ergonômico e moderno. Com conectividade Bluetooth, sensor de alta precisão e botões programáveis, é perfeito para jogos e trabalho.',
+          price: 'R$ 249,99',
+          image: './images/produto6.png'
+      },
+      7: {
+          title: 'IPhone Pro 14 128GB',
+          description: 'O iPhone Pro 14 128GB combina tecnologia avançada e elegância em um dispositivo poderoso. Com câmeras de alta qualidade, desempenho rápido e tela impressionante, é perfeito para quem busca o melhor em smartphones.',
+          price: 'R$ 4299,99',
+          image: './images/produto7.png'
+      },
+      8: {
+          title: 'Headphone Blue JBL',
+          description: 'O Headphone Blue JBL oferece som excepcional e conforto duradouro. Com design elegante, conectividade Bluetooth e qualidade de áudio premium, é perfeito para música e entretenimento em movimento.',
+          price: 'R$ 199,99',
+          image: './images/produto8.png'
+      }
+  };
+
+  if (productId && products[productId]) {
+      const product = products[productId];
+      document.getElementById('product-title').innerText = product.title;
+      document.getElementById('product-description').innerText = product.description;
+      document.getElementById('product-price').innerText = `Preço: ${product.price}`;
+      document.getElementById('product-image').src = product.image;
+      document.getElementById('product-image').alt = product.title;
+  } else {
+      document.getElementById('product-title').innerText = 'Product not found';
+      document.getElementById('product-description').innerText = '';
+      document.getElementById('product-price').innerText = '';
+      document.getElementById('product-image').src = '';
+      document.getElementById('product-image').alt = 'No image available';
+  }
+});
+    </script>
+    <script src="./main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
