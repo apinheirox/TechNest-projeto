@@ -421,7 +421,7 @@ nav a {
     border-radius: 10px;
     background-size: cover;
     width: 100%;
-    height: 350px;
+    height: 330px;
     margin: 0 auto;
     padding: 50px;
     display: flex;
@@ -435,7 +435,7 @@ nav a {
     border-radius: 10px;
     background-size: cover;
     width: 100%;
-    height: 350px;
+    height: 330px;
     margin: 0 auto;
     padding: 50px;
     display: flex;
@@ -462,8 +462,115 @@ nav a {
     margin-top: 10px;
     height: 40px;
     border-radius: 30px;
-    
 }
+#seguranca{
+    margin-top: 80px;
+}
+#seguranca .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    gap: 15px;
+}
+#seguranca .texto-segur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#seguranca .texto-segur ion-icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#seguranca .texto-segur h3{
+    font-family: var(--Family1);
+    font-weight: var(--Bold);
+    font-size: 23px;
+    margin: 0 auto;
+    color: var(--FontBlack);
+    margin-bottom: 5px;
+}
+#seguranca .texto-segur p{
+    font-family: var(--Family2);
+    font-weight: var(--SemiBold);
+    max-width: 250px;
+}
+footer {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    margin-top: 100px;
+    height: 230px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+.footer-column span{
+    color: var(--FontButton);
+}
+
+.footer-column h3 {
+    font-family: var(--Family1);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-column:last-child{
+    text-align: right;
+}
+.footer-column:nth-child(2){
+    text-align: center;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column p{
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+    font-size: 17px;
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+}
+
+.footer-column ul li a {
+    color: var(--textColor);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+}
+
+.footer-column ul li a:hover {
+    color: var(--linkColor);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #34495e;
+    padding-top: 20px;
+    font-family: var(--Family1);
+    font-weight: var(--SemiBold);
+}
+
 @media only screen and (max-width: 1200px) {
     body{
         overflow-x: hidden;
@@ -592,12 +699,12 @@ nav a {
         margin: 0 auto;
     }
     #produtos .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-    gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 20px;
     }
     .infos{
         flex-direction: column;
@@ -677,27 +784,50 @@ nav a {
     }
     .carousel {
         width: 500px;
-      }
-      .carousel img{
+    }
+    .carousel img{
         width: 50%;
-      }
-      .slick-dots {
+    }
+    .slick-dots {
         bottom: -30px;
-      }
-      #banner-3 .card-3 button, #banner-3 .card-2 button{
+    }
+    #banner-3 .card-3 button, #banner-3 .card-2 button{
         margin: 10px auto;
-      }
-      #banner-3{
+    }
+    #banner-3{
         margin-top: 200px;
-      }
-      #banner-3 .container{
+    }
+    #banner-3 .container{
         grid-template-columns: 1fr;
         gap: 20px;
-      }
-      #banner-3 .card-3 h3, #banner-3 .card-2 h3{
+    }
+    #banner-3 .card-3 h3, #banner-3 .card-2 h3{
         font-size: 30px;
         text-align: center;
-      }
+    }
+    #seguranca{
+        margin-top: 200px;
+    }
+      #seguranca .container {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+    .footer-column p{
+        text-align: center;
+    }
+    .footer-column:last-child{
+        text-align: center;
+    }
+    .footer-column:nth-child(2){
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -746,6 +876,21 @@ nav a {
         width: 160px;
         height: 150px;
         margin: 0 auto;
+    }
+    #seguranca .container {
+        grid-template-columns: 1fr;
+    }
+    #seguranca{
+        margin-top: 200px;
+    }
+    .footer-column p{
+        text-align: center;
+    }
+    .footer-column:last-child{
+        text-align: center;
+    }
+    .footer-column:nth-child(2){
+        text-align: center;
     }
 }
 
